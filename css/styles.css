@@ -27,6 +27,17 @@ body img:hover {
 body h2 {
   font-family: "Amatic SC", cursive; }
 
+body h4 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.3rem;
+  margin-left: 2%;
+  margin-top: 1%; }
+
+body h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5rem;
+  color: black; }
+
 footer a:hover {
   color: #226597;
   text-decoration: none;
@@ -62,6 +73,52 @@ a {
 .main__imagenes--display {
   float: left;
   width: 50%; }
+
+.card {
+  width: 18rem;
+  margin: 20px; }
+  .card h2 {
+    color: black; }
+
+#card__one--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__two--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__three--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__four--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__five--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__six--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__seven--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
+
+#card__eight--color {
+  background-color: #EABD8C;
+  /*background-color: #87c0cd;*/
+  border-color: black; }
 
 .footerMain__fondo--color {
   background-image: linear-gradient(#87c0cd, #226597); }
@@ -116,6 +173,9 @@ a {
   #contacto__area p {
     color: black; }
 
+.submain {
+  margin-bottom: 20px; }
+
 .submain__img--tamano {
   width: 100%; }
 
@@ -138,7 +198,7 @@ a {
   display: inline-block; }
 
 .footerMain {
-  margin-top: -7px; }
+  margin-top: -20px; }
   .footerMain a {
     color: white; }
 
@@ -148,26 +208,6 @@ a {
 .mainSub img {
   width: 100%;
   transition: 0.2s; }
-
-/*Accesorios Page*/
-.mainAccesorios {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-areas: "amplificadores auriculares"; }
-
-#accesoriosAmplificadores {
-  grid-area: amplificadores; }
-
-#accesoriosAuriculares {
-  grid-area: auriculares; }
-
-.mainAccesorios img {
-  width: 100%;
-  transition: 0.2s; }
-
-.mainAccesorios img:hover {
-  transform: scale(1.002); }
 
 @media screen and (min-width: 900px) {
   .nav-item:hover .navbar__sublist {
@@ -185,11 +225,7 @@ a {
   .footerMain__list ul {
     margin: auto;
     width: 70%;
-    padding: 0; }
-  .mainAccesorios {
-    display: block; }
-  .imgAccesorios {
-    width: 100%; } }
+    padding: 0; } }
 
 @keyframes fading {
   0% {

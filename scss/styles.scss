@@ -33,6 +33,17 @@ body {
 	h2 {
 		font-family: $fontFamily;
 	}
+	h4 {
+		font-family: $fontFamily;
+		font-size: $fontSize+1;
+		margin-left: 2%;
+		margin-top: 1%;
+	}
+	h3 {
+		font-family: $fontFamily;
+		font-size: $fontSize+0.2;
+		color: black;
+	}
 
 }
 
@@ -84,6 +95,22 @@ a {
 .main__imagenes--display {
 	float:left;
 	width:50%;
+}
+
+.card {
+	width: 18rem;
+	margin:20px;
+	h2 {
+		color:black;
+	}
+}
+
+@each $number in one, two, three, four, five, six, seven, eight {
+	#card__#{$number}--color{
+		background-color: #EABD8C;
+		/*background-color: #87c0cd;*/
+		border-color: black;
+	}
 }
 
 .footerMain__fondo--color {
@@ -153,7 +180,9 @@ a {
 		color: black;
 	}
 }
-
+.submain {
+	margin-bottom: 20px;
+}
 .submain__img--tamano {
 	width: 100%;
 }
@@ -182,7 +211,7 @@ a {
 }
 
 .footerMain {
-	margin-top: -7px;	
+	margin-top: -20px;	
 	a {
 		color: white;
 	}
@@ -195,33 +224,6 @@ a {
 .mainSub img {
 	width:100%;
 	transition: 0.2s;
-}
-
-/*Accesorios Page*/
-.mainAccesorios {
-	display: grid;
-	grid-template-rows: 100%;
-	grid-template-columns: repeat(2,minmax(0,1fr));
-	grid-template-areas: 
-		"amplificadores auriculares"
-}
-
-#accesoriosAmplificadores {
-	grid-area: amplificadores;
-}
-
-#accesoriosAuriculares {
-	grid-area: auriculares;
-}
-
-.mainAccesorios img {
-	width: 100%;
-	transition: 0.2s;
-}
-
-.mainAccesorios img:hover {
-	transform: scale(1.002);
-
 }
 
 @media screen and (min-width: 900px){
@@ -249,12 +251,7 @@ a {
 		width:70%;
 		padding: 0;
 	}
-	.mainAccesorios {
-		display: block;
-	}
-	.imgAccesorios {
-		width: 100%;
-	}
+
 }
 
 @keyframes fading {
