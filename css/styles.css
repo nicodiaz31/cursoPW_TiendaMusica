@@ -1,22 +1,22 @@
 body a {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.3rem; }
+  font-family: "Poiret One", cursive;
+  font-size: 1rem; }
 
 body p {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.8rem; }
+  font-family: "Poiret One", cursive;
+  font-size: 1.5rem; }
 
 body label {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.3rem; }
+  font-family: "Poiret One", cursive;
+  font-size: 1rem; }
 
 body input {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.3rem; }
+  font-family: "Poiret One", cursive;
+  font-size: 1rem; }
 
 body button {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.6rem; }
+  font-family: "Poiret One", cursive;
+  font-size: 1.3rem; }
 
 body img {
   transition: 0.2s; }
@@ -25,18 +25,22 @@ body img:hover {
   transform: scale(1.002); }
 
 body h2 {
-  font-family: "Amatic SC", cursive; }
+  font-family: "Poiret One", cursive; }
 
 body h4 {
-  font-family: "Amatic SC", cursive;
-  font-size: 2.3rem;
+  font-family: "Poiret One", cursive;
+  font-size: 3rem;
   margin-left: 2%;
-  margin-top: 1%; }
+  margin-top: 1%;
+  color: black; }
 
 body h3 {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.5rem;
+  font-family: "Poiret One", cursive;
+  font-size: 2rem;
   color: black; }
+
+body h4 {
+  font-family: "Poiret One", cursive; }
 
 footer a:hover {
   color: #226597;
@@ -75,55 +79,109 @@ a {
   width: 50%; }
 
 .card {
-  width: 18rem;
-  margin-bottom: 15px; }
+  width: 15rem;
+  height: 26.5rem;
+  margin: 15px;
+  border-radius: 10px; }
   .card h2 {
     color: black; }
+  .card .blue__button {
+    color: white;
+    background-color: #226597;
+    position: relative;
+    bottom: 5px; }
+  .card a:hover {
+    background-color: #145374;
+    color: white; }
+  .card .card-footer {
+    border: none;
+    background-color: #FFCD89; }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    text-align: center; }
+    .card .image img {
+      max-width: 100%;
+      max-height: 100%;
+      transition: .5s;
+      border-radius: 10px; }
+  .card .details__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    /*100%*/
+    height: 100%;
+    background-image: linear-gradient(#145374, #87c0cd);
+    /*background:#145374*/
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg); }
+    .card .details__card .center {
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+  .card .p__title {
+    font-weight: 900; }
+
+.card:hover .image img {
+  opacity: .5;
+  transform: translateX(30%);
+  /*100%*/ }
+
+.card:hover .details__card {
+  transform: perspective(2000px) rotateY(0deg); }
+
+.card-img-top {
+  width: 100%;
+  height: 8.5rem;
+  object-fit: cover; }
 
 #card__one--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__two--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__three--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__four--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__five--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__six--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__seven--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 #card__eight--color {
-  background-color: #EABD8C;
-  /*background-color: #87c0cd;*/
-  border-color: black; }
+  background-color: #145374;
+  border: 0; }
 
 .footerMain__fondo--color {
   background-image: linear-gradient(#87c0cd, #226597); }
   .footerMain__fondo--color label {
-    font-family: "Amatic SC", cursive;
+    font-family: "Poiret One", cursive;
     color: white; }
 
 .footerMain__lists--display {
@@ -139,7 +197,7 @@ a {
   margin-top: 2%; }
 
 .footerMain__list--title {
-  font-size: 1.4rem; }
+  font-size: 1.1rem; }
 
 .footerMain__logo--tamano {
   width: 7%;
@@ -162,7 +220,7 @@ a {
 
 .nav__link--hover:hover a {
   color: #145374;
-  font-size: 1.4rem; }
+  font-size: 1.1rem; }
 
 .container__contacto {
   margin: 0%; }
@@ -174,7 +232,8 @@ a {
     color: black; }
 
 .submain {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: -14px; }
 
 .submain__img--tamano {
   width: 100%; }
@@ -209,6 +268,19 @@ a {
   width: 100%;
   transition: 0.2s; }
 
+.blue__button {
+  border: solid;
+  background-color: #145374;
+  border: none;
+  border-radius: 4px;
+  margin: 5px; }
+
+.word__button {
+  color: white; }
+
+.row__orden {
+  justify-content: space-start; }
+
 @media screen and (min-width: 900px) {
   .nav-item:hover .navbar__sublist {
     display: block; } }
@@ -218,10 +290,12 @@ a {
     width: 90px;
     height: 90px; } }
 
-@media (max-width: 760px) {
+@media (max-width: 769px) {
   .main__imagenes--display {
     float: left;
     width: 100%; }
+  .row__orden {
+    justify-content: space-around; }
   .footerMain__list ul {
     margin: auto;
     width: 70%;
