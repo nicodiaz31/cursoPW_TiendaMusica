@@ -60,6 +60,11 @@ a {
   color: white;
   text-decoration: none; }
 
+.hr__personalized {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
 .navbar__logo {
   display: inline-block;
   width: 8%;
@@ -81,8 +86,7 @@ a {
 .card {
   width: 15rem;
   height: 26.5rem;
-  margin: 15px;
-  border-radius: 10px; }
+  margin: 15px; }
   .card h2 {
     color: black; }
   .card .blue__button {
@@ -111,6 +115,8 @@ a {
       max-height: 100%;
       transition: .5s;
       border-radius: 10px; }
+    .card .image .img__ancha {
+      margin-top: 70px; }
   .card .details__card {
     position: absolute;
     top: 0;
@@ -196,19 +202,20 @@ a {
   text-align: center;
   margin-top: 2%; }
 
-.footerMain__list--title {
-  font-size: 1.1rem; }
-
 .footerMain__logo--tamano {
   width: 7%;
   height: 7%; }
 
+.footerMain__logotienda--tamano {
+  width: 75px;
+  height: 75px; }
+
 .footer__copyright--fondo {
-  background-color: #113f67; }
+  background-color: #113f67;
+  text-align: center; }
   .footer__copyright--fondo label {
     color: white;
-    font-family: 'Exo', sans-serif;
-    font-size: 0.5em; }
+    font-size: 0.8rem; }
 
 .navbar-nav {
   display: flex;
@@ -261,6 +268,15 @@ a {
   .footerMain a {
     color: white; }
 
+.footerMain__list--title {
+  font-size: 1.3rem;
+  font-weight: 900; }
+
+.store__location--center {
+  text-align: center; }
+  .store__location--center label {
+    font-weight: bold; }
+
 .mainSub {
   display: inline-flex; }
 
@@ -275,11 +291,14 @@ a {
   border-radius: 4px;
   margin: 5px; }
 
+.title__section {
+  text-align: center; }
+
 .word__button {
   color: white; }
 
 .row__orden {
-  justify-content: space-start; }
+  justify-content: space-around; }
 
 @media screen and (min-width: 900px) {
   .nav-item:hover .navbar__sublist {
@@ -299,7 +318,9 @@ a {
   .footerMain__list ul {
     margin: auto;
     width: 70%;
-    padding: 0; } }
+    padding: 0; }
+  .submain {
+    margin-top: 5px; } }
 
 @keyframes fading {
   0% {

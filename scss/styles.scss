@@ -80,6 +80,12 @@ a {
 	text-decoration: none;
 }
 
+.hr__personalized {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 .navbar__logo {
 	display: inline-block;
 	width: 8%;
@@ -105,7 +111,6 @@ a {
 	width: 15rem;
 	height: 26.5rem;
 	margin: 15px;
-	border-radius:10px;
 	h2 {
 		color:black;
 	}
@@ -139,6 +144,9 @@ a {
 			max-height: 100%;
 			transition: .5s;
 			border-radius: 10px;
+		}
+		.img__ancha {
+			margin-top: 70px;
 		}
 	}
 	.details__card {
@@ -215,22 +223,23 @@ a {
 	margin-top: 2%;
 }
 
-.footerMain__list--title {
-	font-size: $fontSize + 0.1;
-}
-
 .footerMain__logo--tamano {
 	width: 7%;
 	height: 7%;	
+}
+
+.footerMain__logotienda--tamano {
+	width: 75px;
+	height: 75px;	
 }
 
 .footer__copyright--fondo {
 	background-color: #113f67;
 	label {
 		color: white;
-		font-family: 'Exo', sans-serif;
-		font-size: 0.5em;
+		font-size: 0.8rem;
 	}
+	text-align: center;
 }
 
 .navbar-nav {
@@ -298,6 +307,18 @@ a {
 	}
 }
 
+.footerMain__list--title {
+	font-size: $fontSize + 0.3;
+	font-weight: 900;
+}
+
+.store__location--center {
+	text-align: center;
+	label {
+		font-weight: bold;
+	}
+}
+
 .mainSub {
 	display: inline-flex;
 }
@@ -315,12 +336,16 @@ a {
 	margin: 5px;
 }
 
+.title__section {
+	text-align: center;
+}
+
 .word__button{
 	color: white;
 }
 
 .row__orden {
-	justify-content: space-start;
+	justify-content: space-around;
 }
 
 @media screen and (min-width: 900px){
@@ -352,6 +377,10 @@ a {
 		margin:auto;
 		width:70%;
 		padding: 0;
+	}
+
+	.submain {
+		margin-top: 5px;
 	}
 
 }
