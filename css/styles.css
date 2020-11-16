@@ -349,7 +349,9 @@ a {
     width: 70%;
     padding: 0; }
   .title__image--style {
-    font-size: 9vw; } }
+    font-size: 9vw; }
+  .container__contacto {
+    margin-bottom: 25px; } }
 
 @keyframes fading {
   0% {
