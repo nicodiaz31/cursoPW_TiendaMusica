@@ -247,6 +247,9 @@ a {
   .card__busqueda .center {
     width: 100%; }
 
+.card__center--width .center {
+  width: 100%; }
+
 #card__one--color {
   background-color: #145374;
   border: 0; }

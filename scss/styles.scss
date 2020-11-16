@@ -325,6 +325,13 @@ a {
 	
 }
 
+.card__center--width {
+		.center {
+			width: 100%;
+		}
+	
+}
+
 @each $number in one, two, three, four, five, six, seven, eight {
 	#card__#{$number}--color{
 		background-color: #145374;
