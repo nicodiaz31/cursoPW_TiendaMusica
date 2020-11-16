@@ -1,8 +1,23 @@
 $fullWidth: 100%;
+$fullHeight: 100%;
 $fontFamily: 'Poiret One', cursive;;
 $fontSize: 1rem;
+$fontFamilyImages: 'Raleway', sans-serif;
+
+html {
+    width: $fullWidth;
+    height: $fullHeight;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 body {
+	width: $fullWidth;
+	height: $fullHeight;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
 	a {
 		font-family: $fontFamily;
 		font-size: $fontSize;
@@ -80,12 +95,7 @@ a {
 	text-decoration: none;
 }
 
-.hr__personalized {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
+/*navbar estilos relacionados*/
 .navbar__logo {
 	display: inline-block;
 	width: 8%;
@@ -94,7 +104,7 @@ a {
 
 .navbar__logo--tamano {
 	width: $fullWidth;
-	height: 100%;
+	height: $fullHeight;
 	margin: 0;
 	animation-name: fading;
 	animation-duration: 1s;
@@ -102,104 +112,77 @@ a {
 	animation-timing-function: ease-in;
 }
 
+.nav-link:hover{ 
+	color: white; 
+}	
+
+.nav-item {
+	position: relative;
+	display: inline-block;
+}
+
+.navbar__background--color {
+	background-color: #145374;
+}
+
+.navbar__sublist {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.navbar-nav {
+	display: flex;
+	width: $fullWidth;
+	justify-content: space-around;
+}
+
+.navbar-toggler {
+	z-index: 10;
+}
+
+.nav__link--hover:hover a{
+	color:#145374;
+	font-size: $fontSize + 0.1;
+}
+
+/*hr personalizada debajo del titulo de seccion*/
+.hr__personalized {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*estilos para main y submain*/
 .main__imagenes--display {
 	float:left;
 	width:50%;
 }
 
-.card{
-	width: 15rem;
-	height: 26.5rem;
-	margin: 15px;
-	h2 {
-		color:black;
-	}
-	.blue__button {
-		color: white;
-		background-color: #226597;
-		position: relative;
-		bottom:5px;
-	}
-	a:hover {
-		background-color: #145374;
-		color: white;
-	}
-	.card-footer {
-		border: none;
-		background-color: #FFCD89; 
-	}
-	.card-body{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	.image{
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		background-color:white;
-		text-align: center;
-		img {
-			max-width: 100%;
-			max-height: 100%;
-			transition: .5s;
-			border-radius: 10px;
-		}
-		.img__ancha {
-			margin-top: 70px;
-		}
-	}
-	.details__card {
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 70%;/*100%*/
-	    height: 100%;
-	    background-image: linear-gradient(#145374,#87c0cd);
-	    /*background:#145374*/
-	    transition: .5s;
-	    transform-origin: left;
-	    transform: perspective(2000px) rotateY(-90deg);
-	    .center {
-	    	padding: 20px;
-		    text-align: center;
-		    background: #fff;
-		    position: absolute;
-		    top: 50%;
-		    transform: translateY(-50%);
-		}
-	}
-	.p__title {
-	font-weight: 900;
-}
+.submain {
+	margin-bottom: 20px;
 }
 
-.card:hover {
-		.image {
-			img {
-			    opacity: .5;
-			    transform: translateX(30%);/*100%*/
-			}
-		}
-		.details__card {
-		    transform: perspective(2000px) rotateY(0deg);
-		}
-	}
-
-.card-img-top {
-	width: 100%;
-	height: 8.5rem;
-	object-fit: cover;
+.submain__img--tamano {
+	width: $fullWidth;
+	height: $fullHeight;
 }
 
-
-@each $number in one, two, three, four, five, six, seven, eight {
-	#card__#{$number}--color{
-		background-color: #145374;
-		border: 0;
-	}
+.main{
+	display: inline-block;
+	margin-bottom: 20px;
 }
 
+.mainSub {
+	display: inline-flex;
+}
+
+.mainSub img {
+	width:$fullWidth;
+	transition: 0.2s;
+}
+
+/*footer estilos*/
 .footerMain__fondo--color {
 	background-image: linear-gradient(#87c0cd,#226597);
 
@@ -242,19 +225,111 @@ a {
 	text-align: center;
 }
 
-.navbar-nav {
-	display: flex;
-	width: $fullWidth;
-	justify-content: space-around;
+.footerMain {
+	margin-top: -20px;	
+	a {
+		color: white;
+	}
 }
 
-.navbar-toggler {
-	z-index: 10;
+.footerMain__list--title {
+	font-size: $fontSize + 0.3;
+	font-weight: 900;
 }
 
-.nav__link--hover:hover a{
-	color:#145374;
-	font-size: $fontSize + 0.1;
+/*estilos de elementos*/
+.card{
+	width: 15rem;
+	height: 26.5rem;
+	margin: 15px;
+	h2 {
+		color:black;
+	}
+	.blue__button {
+		color: white;
+		background-color: #226597;
+		position: relative;
+		bottom:5px;
+	}
+	a:hover {
+		background-color: #145374;
+		color: white;
+	}
+	.card-footer {
+		border: none;
+		background-color: #FFCD89; 
+	}
+	.card-body{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.image{
+		width: $fullWidth;
+		height: $fullHeight;
+		overflow: hidden;
+		background-color:white;
+		text-align: center;
+		img {
+			max-width: $fullWidth;
+			max-height: $fullHeight;
+			transition: .5s;
+			border-radius: 10px;
+		}
+		.img__ancha {
+			margin-top: 70px;
+		}
+	}
+	.details__card {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 70%;/*100%*/
+	    height: 100%;
+	    background-image: linear-gradient(#145374,#87c0cd);
+	    /*background:#145374*/
+	    transition: .5s;
+	    transform-origin: left;
+	    transform: perspective(2000px) rotateY(-90deg);
+	    .center {
+	    	padding: 20px;
+		    text-align: center;
+		    background: #fff;
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+	}
+	.p__title {
+	font-weight: 900;
+	}
+}
+
+.card:hover {
+		.image {
+			img {
+			    opacity: .5;
+			    transform: translateX(30%);/*100%*/
+			}
+		}
+		.details__card {
+		    transform: perspective(2000px) rotateY(0deg);
+		}
+}
+
+.card__busqueda {
+	width: 17.2rem;
+		.center {
+			width: 100%;
+		}
+	
+}
+
+@each $number in one, two, three, four, five, six, seven, eight {
+	#card__#{$number}--color{
+		background-color: #145374;
+		border: 0;
+	}
 }
 
 .container__contacto {	
@@ -268,49 +343,7 @@ a {
 		color: black;
 	}
 }
-.submain {
-	margin-bottom: 20px;
-	margin-top: -14px;
-}
 
-.submain__img--tamano {
-	width: 100%;
-}
-
-.nav-link:hover{ 
-	color: white; 
-}	
-
-.nav-item {
-	position: relative;
-	display: inline-block;
-}
-
-.navbar__background--color {
-	background-color: #145374;
-}
-
-.navbar__sublist {
-	display: none;
-	position: absolute;
-	z-index: 1;
-}
-
-.main{
-	display: inline-block;
-}
-
-.footerMain {
-	margin-top: -20px;	
-	a {
-		color: white;
-	}
-}
-
-.footerMain__list--title {
-	font-size: $fontSize + 0.3;
-	font-weight: 900;
-}
 
 .store__location--center {
 	text-align: center;
@@ -319,15 +352,7 @@ a {
 	}
 }
 
-.mainSub {
-	display: inline-flex;
-}
-
-.mainSub img {
-	width:100%;
-	transition: 0.2s;
-}
-
+/* estilo boton cards*/
 .blue__button {
 	border: solid;
 	background-color: #145374;
@@ -348,6 +373,25 @@ a {
 	justify-content: space-around;
 }
 
+.title__image--center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.title__image--style {
+	font-size: 7vw;
+	-webkit-text-stroke: 2px black;
+	color: white;
+	font-family: $fontFamilyImages;
+}
+
+.pagos__logo--tamano {
+	width: 12rem;
+}
+
 @media screen and (min-width: 900px){
 
 	.nav-item:hover .navbar__sublist {
@@ -360,6 +404,10 @@ a {
 	.navbar__logo--tamano {
 		width: 90px;
 		height: 90px;
+	}
+	.title__image--style {
+		font-size: 7vw;
+		-webkit-text-stroke: 1px black;
 	}
 }
 
@@ -378,9 +426,8 @@ a {
 		width:70%;
 		padding: 0;
 	}
-
-	.submain {
-		margin-top: 5px;
+	.title__image--style{
+		font-size: 9vw;
 	}
 
 }

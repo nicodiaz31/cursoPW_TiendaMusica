@@ -6,7 +6,8 @@
 	<title>Promociones Bancarias | TiendaMusica</title>
 	<meta name="description" content="Las mejores Promociones Bancarias en instrumentos musicales y accesorios!">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@700&family=Exo:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -58,13 +59,20 @@
 			</nav>
 		</header>
 	</div>
-	<div class="main">
-		<h2>Promociones Bancarias</h2>
-		<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Sapiente, quasi natus explicabo voluptatum inventore sit neque repellendus ullam tempore corrupti nesciunt aliquid odit facilis molestiae optio sunt. Quaerat, expedita, sapiente.</p>
-		<label>Logo Visa</label>
-		<label>Logo Mastercard</label>
-		<label>Logo American Express</label>
-		<label>Logo MercadoPago</label>
+	<div class="submain container-fluid px-0">
+		<div class="row">
+			<div class="title__section container-fluid">   
+				<h4>Promociones Bancarias</h4>  
+			</div>
+		</div>
+		<hr class="hr__personalized">
+		<div class="flex-row">
+			<div class="col-md-12">
+				<p>Todos los días hasta 12 cuotas sin interés con todas las tarjetas de crédito!</p>
+				<p>Si pagas en efectivo hasta 10% de descuento!</p>
+			<label class><img class="pagos__logo--tamano" src="imagenes/pago_logos.png" alt="logoFb"></label>
+			</div>
+		</div>
 	</div>
 	<footer class="footerMain page-footer">
 		<div class="footerMain__fondo--color text-center text-md-left">
@@ -103,11 +111,14 @@
 					</ul>
 				</div>
 			</div>
-			<label>XXXXXXXX, CABA</label><br>
+			<hr class="clearfix w-100 d-md-none">
+			<div class="store__location--center">
+				<label> Avenida Congreso 620, CABA, Argentina</label><br>
+			</div>
 		</div>
 
 		<div class="footer__copyright--fondo footer-copyright">
-			<img class="footerMain__logo--tamano" src="imagenes/logo.png" alt="logo">
+			<img class="footerMain__logotienda--tamano" src="imagenes/logo.png" alt="logo">
 			<label for="logo">TiendaMusica</label><br>
 			<label>© Copyright 2020 TiendaMusica. Todos los derechos reservados</label>
 		</div>

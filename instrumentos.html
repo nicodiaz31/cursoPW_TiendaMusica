@@ -6,7 +6,8 @@
 	<title>Instrumentos | TiendaMusica</title>
 	<meta name="description" content="Los Instrumentos de las mejores marcas a los mejores precios!">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@700&family=Exo:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -60,11 +61,17 @@
 	</div>
 	<div class="submain container-fluid px-0">
 		<div class="row no-gutters">
-			<div class="col-md">
-				<a href="guitarras.html"><img src="imagenes/guitarras.jpg" alt="guitarras" class="submain__img--tamano"></a>				
+			<div class="col-md-6">
+				<a href="guitarras.html"><img src="imagenes/guitarras.jpeg" alt="guitarras" class="submain__img--tamano">
+				<div class="title__image--center">
+					<p class="title__image--style">Guitarras</p>
+				</div></a>
 			</div>
-			<div class="col-md">
-				<a href="bajos.html"><img src="imagenes/bajos.jpg" alt="bajos" class="submain__img--tamano"></a>
+			<div class="col-md-6">
+				<a href="bajos.html"><img src="imagenes/bajos.jpeg" alt="bajos" class="submain__img--tamano">
+				<div class="title__image--center">
+					<p class="title__image--style">Bajos</p>
+				</div></a>
 			</div>
 		</div>
 	</div>
@@ -105,11 +112,14 @@
 					</ul>
 				</div>
 			</div>
-			<label>XXXXXXXX, CABA</label><br>
+			<hr class="clearfix w-100 d-md-none">
+			<div class="store__location--center">
+				<label> Avenida Congreso 620, CABA, Argentina</label><br>
+			</div>
 		</div>
 
 		<div class="footer__copyright--fondo footer-copyright">
-			<img class="footerMain__logo--tamano" src="imagenes/logo.png" alt="logo">
+			<img class="footerMain__logotienda--tamano" src="imagenes/logo.png" alt="logo">
 			<label for="logo">TiendaMusica</label><br>
 			<label>© Copyright 2020 TiendaMusica. Todos los derechos reservados</label>
 		</div>
