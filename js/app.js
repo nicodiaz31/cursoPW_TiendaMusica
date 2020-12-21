@@ -3,6 +3,11 @@ let carrito = [];
 let productos = [];
 let path = window.location.href.split('/').slice(-1).toString().split('.');
 const numbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+const tituloCarrito = document.querySelector('#tituloCarrito');
+const listaProductos = document.querySelector('.row__orden');
+const listaCarrito = document.querySelector('#listaCarrito');
+let numeroArticulos = document.querySelector('#lblCartCount');
+let articulosCarrito = [];
 let type;
 
 
@@ -20,6 +25,33 @@ addProducto(epi339);
 addProducto(epiSp2);
 addProducto(epi335);
 addProducto(fenTel);
+
+listaProductos.addEventListener('click', agregarCarrito);
+
+
+
+function agregarCarrito(e) {
+	e.preventDefault();
+	if(e.target.classList.contains('add__button')){
+		const productoSeleccionado = e.target.parentElement.parentElement.parentElement;
+		obtenerInfo(productoSeleccionado);
+	}
+}
+
+function obtenerInfo(producto) {
+	const productoAgregado = {
+		img : producto.querySelector('.image img').src,
+		titulo : producto.querySelector('.p__title').textContent,
+		precio : producto.querySelector('.price').textContent
+	}
+	articulosCarrito.push(productoAgregado);
+	console.log(articulosCarrito);
+	updateCart();
+}
+
+function updateCart(){
+	numeroArticulos.innerHTML = articulosCarrito.length;
+}
 
 //Clase del producto
 function producto(id, marca, modelo, tipo, precio, imagen, descuento, destacado, novedades) {
@@ -94,12 +126,13 @@ function generateCards(productos) {
 			title.innerHTML = item['marca'] + " " + item['modelo'];
 			detailsCenter.appendChild(title);
 			const price = document.createElement('p');
+			price.className = 'price';
 			price.innerHTML = 'Precio: $'+item['precio'];
 			detailsCenter.appendChild(price);
 			const addButton = document.createElement('a');
-			addButton.setAttribute('href','articulo.html');
-			addButton.className = 'btn blue__button mt-auto';
-			addButton.innerHTML = 'Ver artículo';
+			addButton.setAttribute('href','#');
+			addButton.className = 'btn blue__button mt-auto add__button';
+			addButton.innerHTML = 'Agregar al Carrito';
 			detailsCenter.appendChild(addButton);
 			idNumber = idNumber + 1;
 		}
@@ -114,5 +147,7 @@ if (path[0] == "guitarras") {
 
 	generateCards(productos, type);
 }
+
+
 
 

@@ -403,6 +403,43 @@ a {
 	width: 1.8rem; 
 }
 
+#listaCarrito {
+	right: 0;
+	left: auto;
+	position: absolute;
+	width: 200px;
+
+	p {
+		font-size: 1rem;
+		padding-left: 10px;
+	}
+}
+
+.badge {
+  position: relative;
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ffa500;
+    color: white;
+    font-family: $fontFamily;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+    z-index: 1;
+}
+
 @media screen and (min-width: 900px){
 
 	.nav-item:hover .navbar__sublist {
