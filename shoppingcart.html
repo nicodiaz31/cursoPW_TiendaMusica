@@ -54,10 +54,8 @@
 								<a class="nav-link" href="busqueda.html">Busqueda</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="shoppingcart.html"><img class="cart__logo--tamano" src="imagenes/shoppingcart.png" alt="shoppingcart"></a>
-								<ul class="dropdown-menu navbar__sublist">
-									<li>Carrito vacío</li>
-								</ul>
+								<a class="nav-link" href="shoppingcart.html"><img class="cart__logo--tamano" src="imagenes/shoppingcart.png" alt="shoppingcart">
+								<span class='badge badge-warning' id='lblCartCount'></span></a>
 							</li>
 						</ul>
 					</div>
@@ -66,7 +64,16 @@
 		</header>
 	</div>
 	<div class="submain container-fluid px-0">
-		Carrito de Compras
+		<div class="row">
+			<div class="title__section container-fluid">   
+				<h4>Carrito de Compras</h4>  
+			</div>
+		</div>
+		<hr class="hr__personalized">
+		<div class="flex emptyCart">
+			<h3 id='lblShoppingCart'></h3>
+			<button class="btn btn-info" id="emptyCartBtn">Vaciar Carrito</button>
+		</div>
 	</div>
 	<footer class="footerMain page-footer">
 		<div class="footerMain__fondo--color text-center text-md-left">

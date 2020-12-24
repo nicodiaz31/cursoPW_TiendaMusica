@@ -6,18 +6,20 @@ const numbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
 const tituloCarrito = document.querySelector('#tituloCarrito');
 const listaProductos = document.querySelector('.row__orden');
 const listaCarrito = document.querySelector('#listaCarrito');
+const vaciarCarritoBtn = document.querySelector('#emptyCartBtn');
 let numeroArticulos = document.querySelector('#lblCartCount');
+let lblShoppingCart = document.querySelector('#lblShoppingCart');
 let articulosCarrito = [];
 let type;
 
 
-let epiPR5 = new producto(1, "Epiphone", "PR5", "guitarra", 38999.99, "imagenes/epiphone_pr5.jpg", false, false, false);
-let epiWil = new producto(2, "Epiphone", "Wildkat", "guitarra", 69999.99, "imagenes/epiphone_wildkat_3.jpg", false, false, false);
-let fenStrChr = new producto(3, "Fender", "Stratocaster Chrome", "guitarra", 78999.99, "imagenes/fender_stratocaster_chrome.jpg", false, false, false);
-let epi339 = new producto(4, "Epiphone", "ES 339", "guitarra", 89999.99, "imagenes/epiphone_339_2.jpg", false, false, false);
-let epiSp2 = new producto(5, "Epiphone", "Les Paul Special II", "guitarra", 23999.99, "imagenes/epiphone_lp_sp2.jpg", false, false, false);
-let epi335 = new producto(6, "Epiphone", "DOT 335", "guitarra", 74999.99, "imagenes/epiphone_335.jpg", false, false, false);
-let fenTel = new producto(7, "Fender", "Telecaster", "guitarra", 68999.99, "imagenes/fender_telecaster.jpg", false, false, false);
+let epiPR5 = new Producto(1, "Epiphone", "PR5", "guitarra", 38999.99, "imagenes/epiphone_pr5.jpg", false, false, false);
+let epiWil = new Producto(2, "Epiphone", "Wildkat", "guitarra", 69999.99, "imagenes/epiphone_wildkat_3.jpg", false, false, false);
+let fenStrChr = new Producto(3, "Fender", "Stratocaster Chrome", "guitarra", 78999.99, "imagenes/fender_stratocaster_chrome.jpg", false, false, false);
+let epi339 = new Producto(4, "Epiphone", "ES 339", "guitarra", 89999.99, "imagenes/epiphone_339_2.jpg", false, false, false);
+let epiSp2 = new Producto(5, "Epiphone", "Les Paul Special II", "guitarra", 23999.99, "imagenes/epiphone_lp_sp2.jpg", false, false, false);
+let epi335 = new Producto(6, "Epiphone", "DOT 335", "guitarra", 74999.99, "imagenes/epiphone_335.jpg", false, false, false);
+let fenTel = new Producto(7, "Fender", "Telecaster", "guitarra", 68999.99, "imagenes/fender_telecaster.jpg", false, false, false);
 addProducto(epiPR5);
 addProducto(epiWil);
 addProducto(fenStrChr);
@@ -26,9 +28,21 @@ addProducto(epiSp2);
 addProducto(epi335);
 addProducto(fenTel);
 
-listaProductos.addEventListener('click', agregarCarrito);
+if (listaProductos != undefined){
+	listaProductos.addEventListener('click', agregarCarrito);
+}
+
+if (localStorage.getItem('articulos') != null){
+	vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+}
 
 
+function vaciarCarrito(){
+	localStorage.clear();
+	numeroArticulos.length = 0;
+	updateCart();
+	location.reload(false);
+}
 
 function agregarCarrito(e) {
 	e.preventDefault();
@@ -47,6 +61,7 @@ function obtenerInfo(producto) {
 	articulosCarrito.push(productoAgregado);
 	console.log(articulosCarrito);
 	updateCart();
+	saveCart();
 }
 
 function updateCart(){
@@ -54,7 +69,7 @@ function updateCart(){
 }
 
 //Clase del producto
-function producto(id, marca, modelo, tipo, precio, imagen, descuento, destacado, novedades) {
+function Producto(id, marca, modelo, tipo, precio, imagen, descuento, destacado, novedades) {
 	this.id = id;
 	this.marca = marca;
 	this.modelo = modelo;
@@ -64,11 +79,6 @@ function producto(id, marca, modelo, tipo, precio, imagen, descuento, destacado,
 	this.descuento = descuento;
 	this.destacado = destacado;
 	this.novedades = novedades;
-}
-
-//Funcion agregar al carrito
-function addCarrito(producto){
-	carrito.push(producto);
 }
 
 //Funcion eliminar del carrito
@@ -146,8 +156,35 @@ if (path[0] == "guitarras") {
 	console.log(type);	
 
 	generateCards(productos, type);
+} else if (path[0] == "shoppingcart") {
+	console.log(path[0]);
+	showShoppingCart();
 }
 
+function saveCart(){
+	localStorage.setItem('articulos',JSON.stringify(articulosCarrito));
+}
+
+function readStorage(){
+	articulosCarrito = JSON.parse(localStorage.getItem('articulos'));
+	updateCart();
+}
+
+if (articulosCarrito.length > 0) {
+	updateCart();
+}
+
+if (localStorage.getItem('articulos') != null){
+	readStorage();
+}
+
+function showShoppingCart(	) {
+	if (localStorage.getItem('articulos') != null){
+		lblShoppingCart.innerHTML = "Artículos";
+	} else {
+		lblShoppingCart.innerHTML = "Carrito Vacio";
+	}
+}
 
 
 
