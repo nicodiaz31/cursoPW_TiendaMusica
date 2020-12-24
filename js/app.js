@@ -32,10 +32,9 @@ if (listaProductos != undefined){
 	listaProductos.addEventListener('click', agregarCarrito);
 }
 
-if (localStorage.getItem('articulos') != null){
+if (path[0] == "shoppingcart"){
 	vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
-
 
 function vaciarCarrito(){
 	localStorage.clear();
