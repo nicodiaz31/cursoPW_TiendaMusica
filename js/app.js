@@ -28,14 +28,6 @@ addProducto(epiSp2);
 addProducto(epi335);
 addProducto(fenTel);
 
-if (listaProductos != undefined){
-	listaProductos.addEventListener('click', agregarCarrito);
-}
-
-if (path[0] == "shoppingcart"){
-	vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
-}
-
 function vaciarCarrito(){
 	localStorage.clear();
 	numeroArticulos.length = 0;
@@ -105,6 +97,23 @@ function defineType (pagina) {
 	return tipo;
 }
 
+function showShoppingCart(	) {
+	if (localStorage.getItem('articulos') != null){
+		lblShoppingCart.innerHTML = "Artículos";
+	} else {
+		lblShoppingCart.innerHTML = "Carrito Vacio";
+	}
+}
+
+function saveCart(){
+	localStorage.setItem('articulos',JSON.stringify(articulosCarrito));
+}
+
+function readStorage(){
+	articulosCarrito = JSON.parse(localStorage.getItem('articulos'));
+	updateCart();
+}
+
 function generateCards(productos) {
 	let idNumber = 0;
 
@@ -160,15 +169,6 @@ if (path[0] == "guitarras") {
 	showShoppingCart();
 }
 
-function saveCart(){
-	localStorage.setItem('articulos',JSON.stringify(articulosCarrito));
-}
-
-function readStorage(){
-	articulosCarrito = JSON.parse(localStorage.getItem('articulos'));
-	updateCart();
-}
-
 if (articulosCarrito.length > 0) {
 	updateCart();
 }
@@ -177,13 +177,15 @@ if (localStorage.getItem('articulos') != null){
 	readStorage();
 }
 
-function showShoppingCart(	) {
-	if (localStorage.getItem('articulos') != null){
-		lblShoppingCart.innerHTML = "Artículos";
-	} else {
-		lblShoppingCart.innerHTML = "Carrito Vacio";
-	}
+if (listaProductos != undefined){
+	listaProductos.addEventListener('click', agregarCarrito);
 }
+
+if (path[0] == "shoppingcart"){
+	vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+}
+
+
 
 
 
