@@ -11,6 +11,8 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; }
+  body header {
+    position: relative; }
   body a {
     font-family: "Poiret One", cursive;
     font-size: 1rem; }
@@ -104,6 +106,10 @@ a {
 .nav__link--hover:hover a {
   color: #145374;
   font-size: 1.1rem; }
+
+.msg {
+  position: absolute;
+  color: white; }
 
 /*hr personalizada debajo del titulo de seccion*/
 .hr__personalized {
