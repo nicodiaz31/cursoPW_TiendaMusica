@@ -1,0 +1,200 @@
+[
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "PR5",
+		"tipo": "guitarra",
+		"precio": 38999.99,
+		"imagen": "imagenes/epiphone_pr5.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 2,
+		"marca": "Epiphone",
+		"modelo": "Wildkat",
+		"tipo": "guitarra",
+		"precio": 69999.99,
+		"imagen": "imagenes/epiphone_wildkat_3.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 3,
+		"marca": "Fender",
+		"modelo": "Stratocaster Chrome",
+		"tipo": "guitarra",
+		"precio": 78999.99,
+		"imagen": "imagenes/fender_stratocaster_chrome.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 4,
+		"marca": "Epiphone",
+		"modelo": "ES 339",
+		"tipo": "guitarra",
+		"precio": 89999.99,
+		"imagen": "imagenes/epiphone_339_2.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 5,
+		"marca": "Epiphone",
+		"modelo": "Les Paul Special II",
+		"tipo": "guitarra",
+		"precio": 23999.99,
+		"imagen": "imagenes/epiphone_lp_sp2.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 6,
+		"marca": "Epiphone",
+		"modelo": "DOT 335",
+		"tipo": "guitarra",
+		"precio": 74999.99,
+		"imagen": "imagenes/epiphone_335.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 7,
+		"marca": "Fender",
+		"modelo": "Telecaster",
+		"tipo": "guitarra",
+		"precio": 68999.99,
+		"imagen": "imagenes/fender_telecaster.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	},
+	{
+		"id": 1,
+		"marca": "Epiphone",
+		"modelo": "",
+		"tipo": "",
+		"precio": "",
+		"imagen": "",
+		"descuento":,
+		"destacado":,
+		"novedades"
+	}
+]
