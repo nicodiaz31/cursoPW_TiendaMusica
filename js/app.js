@@ -1,21 +1,10 @@
 $(document).ready(function(){
 
-	$.ajax({
-		url:'js/articles.json',
-		success: function (data, status, xht) {
-			console.log(data)
-		},
-		error: function (xhr, status, errorThrown) {
-			console.log(xhr)
-			console.log(status)
-			console.log(errorThrown)
-		}
-	})
-
 	let id = 0;
 	let carrito = [];
 	let productos = [];
 	let path = window.location.href.split('/').slice(-1).toString().split('.');
+	console.log(path[0]);
 	const numbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 	const tituloCarrito = document.querySelector('#tituloCarrito');
 	const listaProductos = document.querySelector('.row__orden');
@@ -29,23 +18,23 @@ $(document).ready(function(){
 	const msg = $('#msg');
 	let cards;
 	let type;
-	
 
-	let epiPR5 = new Producto(1, "Epiphone", "PR5", "guitarra", 38999.99, "imagenes/epiphone_pr5.jpg", false, false, false);
-	let epiWil = new Producto(2, "Epiphone", "Wildkat", "guitarra", 69999.99, "imagenes/epiphone_wildkat_3.jpg", false, false, false);
-	let fenStrChr = new Producto(3, "Fender", "Stratocaster Chrome", "guitarra", 78999.99, "imagenes/fender_stratocaster_chrome.jpg", false, false, false);
-	let epi339 = new Producto(4, "Epiphone", "ES 339", "guitarra", 89999.99, "imagenes/epiphone_339_2.jpg", false, false, false);
-	let epiSp2 = new Producto(5, "Epiphone", "Les Paul Special II", "guitarra", 23999.99, "imagenes/epiphone_lp_sp2.jpg", false, false, false);
-	let epi335 = new Producto(6, "Epiphone", "DOT 335", "guitarra", 74999.99, "imagenes/epiphone_335.jpg", false, false, false);
-	let fenTel = new Producto(7, "Fender", "Telecaster", "guitarra", 68999.99, "imagenes/fender_telecaster.jpg", false, false, false);
-	addProducto(epiPR5);
-	addProducto(epiWil);
-	addProducto(fenStrChr);
-	addProducto(epi339);
-	addProducto(epiSp2);
-	addProducto(epi335);
-	addProducto(fenTel);
-
+	function getJson(){
+		console.log(productos);
+		$.ajax({
+			url:'js/articles.json',
+			success: function (data, status, xhr) {
+				console.log(data)
+				productos = data
+				generateCards(productos)
+			},
+			error: function (xhr, status, errorThrown) {
+				console.log(xhr)
+				console.log(status)
+				console.log(errorThrown)
+			}
+		})
+	}	
 	
 
 	function vaciarCarrito(){
@@ -121,6 +110,15 @@ $(document).ready(function(){
 		if (pagina == "guitarras") {
 			tipo = "guitarra";
 		}
+		if (pagina == "bajos") {
+			tipo = "bajo";
+		}
+		if (pagina == "amplificadores") {
+			tipo = "amplificador";
+		} 
+		if (pagina == "auriculares") {
+			tipo = "auriculares";
+		} 
 		return tipo;
 	}
 
@@ -159,6 +157,9 @@ $(document).ready(function(){
 				card.appendChild(image)
 				const img = document.createElement('img');
 				img.setAttribute('src',item['imagen']);
+				if ( item.tipo == "amplificador" || item.tipo == "auriculares") {
+					img.className = 'img__ancha';
+				} 
 				image.appendChild(img); 
 				const details = document.createElement('div');
 				details.className = 'details__card';
@@ -185,11 +186,11 @@ $(document).ready(function(){
 	}
 
 	//Esto lo haré para todas las paginas que necesiten mostrar cards, para esta entrega solo estoy trabajando con guitarras
-	if (path[0] == "guitarras") {
+	if (path[0] == "guitarras" || path[0] == "bajos" || path[0] == "amplificadores" || path[0] == "auriculares") {
 		type = defineType(path[0]);
 		console.log(type);	
+		getJson();
 
-		generateCards(productos, type);
 	} else if (path[0] == "shoppingcart") {
 		console.log(path[0]);
 		showShoppingCart();

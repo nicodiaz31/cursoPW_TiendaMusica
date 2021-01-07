@@ -75,5 +75,159 @@
 		"descuento": false,
 		"destacado": false,
 		"novedades": false
+	},
+	{
+		"id": 8,
+		"marca": "Epiphone",
+		"modelo": "Toby Deluxe IV",
+		"tipo": "bajo",
+		"precio": 58999.99,
+		"imagen": "imagenes/epiphone_toby_dx_iv.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 9,
+		"marca": "Epiphone",
+		"modelo": "Jack Cassidy",
+		"tipo": "bajo",
+		"precio": 88999.99,
+		"imagen": "imagenes/epiphone_jack_casady.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 10,
+		"marca": "Squier",
+		"modelo": "Jazz Bass",
+		"tipo": "bajo",
+		"precio": 29999.99,
+		"imagen": "imagenes/squier_jazz_bass.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 11,
+		"marca": "Gibson",
+		"modelo": "Explorer Bass",
+		"tipo": "bajo",
+		"precio": 129999.99,
+		"imagen": "imagenes/gibson_explorer_bass.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 12,
+		"marca": "Peavy",
+		"modelo": "Max 115",
+		"tipo": "amplificador",
+		"precio": 68999.99,
+		"imagen": "imagenes/amplificador_bajo_peavy_max_115.png",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 13,
+		"marca": "Vox",
+		"modelo": "VT40 Prevalvular",
+		"tipo": "amplificador",
+		"precio": 32999.99,
+		"imagen": "imagenes/amplificador_vox_vt40.png",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 14,
+		"marca": "Orange",
+		"modelo": "Crush 20",
+		"tipo": "amplificador",
+		"precio": 19999.99,
+		"imagen": "imagenes/amplificador_orange_crush_20.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 15,
+		"marca": "Fender",
+		"modelo": "Champion 100XL",
+		"tipo": "amplificador",
+		"precio": 89999.99,
+		"imagen": "imagenes/amplificador_fender_champion_100.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 16,
+		"marca": "Acoustic",
+		"modelo": "A40",
+		"tipo": "amplificador",
+		"precio": 34999.99,
+		"imagen": "imagenes/amplificador_acoustic_a40.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 17,
+		"marca": "Sony",
+		"modelo": "WF 1000 XM3",
+		"tipo": "auriculares",
+		"precio": 22999.99,
+		"imagen": "imagenes/auriculares_sony_1000xm3.png",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 18,
+		"marca": "Sony",
+		"modelo": "WH 1000 XM4",
+		"tipo": "auriculares",
+		"precio": 44999.99,
+		"imagen": "imagenes/auriculares_sony_xm4.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 19,
+		"marca": "AKG",
+		"modelo": "Studio K141",
+		"tipo": "auriculares",
+		"precio": 18999.99,
+		"imagen": "imagenes/auriculares_akg_k141.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 20,
+		"marca": "Sony",
+		"modelo": "WF SP-800",
+		"tipo": "auriculares",
+		"precio": 19999.99,
+		"imagen": "imagenes/auriculares_sony_sp800.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 21,
+		"marca": "Sony",
+		"modelo": "WF XB-700",
+		"tipo": "auriculares",
+		"precio": 14999.99,
+		"imagen": "imagenes/auriculares_sony_xb700.jpeg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": false
 	}
 ]
