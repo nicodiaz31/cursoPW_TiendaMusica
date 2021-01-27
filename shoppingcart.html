@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="tienda musica, guitarras epihone, bajos epiphone, guitarras fender, bajos fender, tienda musica caba, promociones tienda musica, promociones tienda instrumentos, amplificadores caba, amplificador cuotas tienda, guitarras cuotas, bajos cuotas, cuotas instrumentos, auriculares cuotas, auriculares sony, amplificador vox, guitarras, bajos, amplificadores, auriculares, cuotas, promociones">
-	<title>Promociones | TiendaMusica</title>
+	<title>Carrito de Compras | TiendaMusica</title>
 	<meta name="description" content="Las mejores Promociones en instrumentos musicales y accesorios!">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -69,7 +69,15 @@
 		<hr class="hr__personalized">
 		<div class="flex emptyCart">
 			<h3 id='lblShoppingCart'></h3>
-			<button class="btn btn-info" id="emptyCartBtn">Vaciar Carrito</button>
+			<div class="small__container cart-page">
+				<table class="listadoProductos">
+				</table>
+				<div id="listadoCarrito"></div>
+			</div>
+			<div id="contBotones">
+				<button class="btn btn-info" id="emptyCartBtn">Vaciar Carrito</button>
+				<button class="btn btn-info botonCompra" id="botonComprar"><a>Comprar</a></button>
+			</div>
 		</div>
 	</div>
 	<footer class="footerMain page-footer">

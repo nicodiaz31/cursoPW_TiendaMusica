@@ -10,7 +10,8 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Poiret One", cursive; }
   body header {
     position: relative; }
   body a {
@@ -46,6 +47,27 @@ body {
     color: black; }
   body h4 {
     font-family: "Poiret One", cursive; }
+  body th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #145374; }
+    body th label {
+      font-size: 1.5rem; }
+  body td {
+    padding: 10px 5px; }
+    body td input {
+      width: 40px;
+      height: 30px;
+      padding: 5px; }
+    body td img {
+      margin-right: 10px; }
+
+td:last-child {
+  text-align: right; }
+
+th:last-child {
+  text-align: right; }
 
 footer a:hover {
   color: #226597;
@@ -64,6 +86,26 @@ ul li {
 a {
   color: white;
   text-decoration: none; }
+
+.total-price {
+  display: flex;
+  justify-content: flex-end; }
+
+.total-table {
+  border-top: 3px solid #145374;
+  width: 100%;
+  max-width: 22rem; }
+
+.remove-option {
+  text-decoration: none;
+  color: #c65102;
+  font-size: 12px;
+  margin-left: 10px;
+  border: none; }
+
+.remove-option:hover {
+  text-decoration: none;
+  color: red; }
 
 /*navbar estilos relacionados*/
 .navbar__logo {
@@ -375,8 +417,58 @@ a {
   margin-bottom: 30px; }
 
 #emptyCartBtn {
-  margin: auto;
+  margin: 0;
   display: block; }
+
+#listadoCarrito {
+  margin: 50px; }
+  #listadoCarrito .tituloProducto {
+    display: flex;
+    text-align: center;
+    align-center: center;
+    flex-direction: column; }
+
+.cart-page {
+  padding-right: 80px;
+  padding-left: 80px; }
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap; }
+
+.div-img {
+  display: flex;
+  justify-content: center; }
+
+.listadoProductos {
+  width: 100%;
+  border-collapse: collapse; }
+
+#lblShoppingCart {
+  margin-left: 20px; }
+
+#msg {
+  width-min: 200px;
+  border-radius: 5px;
+  color: #E8E8E8; }
+
+.center__input {
+  text-align: center; }
+
+#botonComprar {
+  background-color: #32CD32;
+  margin-left: 10px;
+  border-color: #32CD32; }
+  #botonComprar a {
+    color: white;
+    text-decoration: none; }
+
+#botonComprar:hover:enabled {
+  background-color: #006400; }
+
+#contBotones {
+  display: flex;
+  justify-content: center; }
 
 @media screen and (min-width: 900px) {
   .nav-item:hover .navbar__sublist {
@@ -403,7 +495,9 @@ a {
   .title__image--style {
     font-size: 9vw; }
   .container__contacto {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .cart-info p {
+    display: none; } }
 
 @keyframes fading {
   0% {

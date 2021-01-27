@@ -229,5 +229,149 @@
 		"descuento": false,
 		"destacado": false,
 		"novedades": false
+	},
+	{
+		"id": 22,
+		"marca": "Gretsch",
+		"modelo": " Electromatic",
+		"tipo": "guitarra",
+		"precio": 78999.99,
+		"imagen": "imagenes/gretsch_electromatic.png",
+		"descuento": false,
+		"destacado": false,
+		"novedades": true
+	},
+	{
+		"id": 23,
+		"marca": "Gibson",
+		"modelo": "Firebird",
+		"tipo": "guitarra",
+		"precio": 148999.99,
+		"imagen": "imagenes/gibson_firebird.png",
+		"descuento": false,
+		"destacado": false,
+		"novedades": true
+	},
+	{
+		"id": 24,
+		"marca": "Gibson",
+		"modelo": "Midtown Standard",
+		"tipo": "bajo",
+		"precio": 198999.99,
+		"imagen": "imagenes/gibson_midtown_standard.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": true
+	},
+	{
+		"id": 25,
+		"marca": "Gibson",
+		"modelo": "Les Paul Standard",
+		"tipo": "guitarra",
+		"precio": 264999.99,
+		"imagen": "imagenes/gibson_lp_standard.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": true
+	},
+	{
+		"id": 26,
+		"marca": "Washburn",
+		"modelo": "PXV",
+		"tipo": "guitarra",
+		"precio": 134999.99,
+		"imagen": "imagenes/washburn_pxv.jpg",
+		"descuento": false,
+		"destacado": false,
+		"novedades": true
+	},
+	{
+		"id": 27,
+		"marca": "Gibson",
+		"modelo": "Les Paul Bass",
+		"tipo": "bajo",
+		"precio": 248999.99,
+		"imagen": "imagenes/gibson_bajo_lp.jpg",
+		"descuento": false,
+		"destacado": true,
+		"novedades": false
+	},
+	{
+		"id": 28,
+		"marca": "Gibson",
+		"modelo": "Memphis Bigsby",
+		"tipo": "guitarra",
+		"precio": 658999.99,
+		"imagen": "imagenes/gibson_memphis_bigsby.jpg",
+		"descuento": false,
+		"destacado": true,
+		"novedades": false
+	},
+	{
+		"id": 29,
+		"marca": "Gibson",
+		"modelo": "Les Paul Custom",
+		"tipo": "guitarra",
+		"precio": 548999.99,
+		"imagen": "imagenes/gibson_lp_custom.png",
+		"descuento": false,
+		"destacado": true,
+		"novedades": false
+	},
+	{
+		"id": 30,
+		"marca": "Roland",
+		"modelo": "Cube",
+		"tipo": "amplificador",
+		"precio": 28999.99,
+		"imagen": "imagenes/amplificador_roland_cube_40.jpg",
+		"descuento": true,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 31,
+		"marca": "Squier",
+		"modelo": "Stratocaster",
+		"tipo": "guitarra",
+		"precio": 134999.99,
+		"imagen": "imagenes/squier_stratocaster.jpg",
+		"descuento": true,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 32,
+		"marca": "Skullcandy",
+		"modelo": "Hesh 3",
+		"tipo": "auriculares",
+		"precio": 8999.99,
+		"imagen": "imagenes/auriculares_skullcandy_hesh_3.jpg",
+		"descuento": true,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 33,
+		"marca": "Epiphone",
+		"modelo": "Les Paul Special II Sunburst",
+		"tipo": "guitarra",
+		"precio": 17999.99,
+		"imagen": "imagenes/epiphone_lp_sp2_sunburst.jpg",
+		"descuento": true,
+		"destacado": false,
+		"novedades": false
+	},
+	{
+		"id": 34,
+		"marca": "Squier",
+		"modelo": "Mini Precision",
+		"tipo": "bajo",
+		"precio": 24999.99,
+		"imagen": "imagenes/squier_mini_precision.jpg",
+		"descuento": true,
+		"destacado": false,
+		"novedades": false
 	}
+
 ]
